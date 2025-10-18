@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-br">
+<head>
+  <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta charset="UTF-8">
+
+  <!-- Garante que o site seja responsivo em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título exibido na aba do navegador -->
+  <title>ONG Raízes do Amanhã</title>
+
+  <!-- Importa o arquivo CSS com toda a estilização visual -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho fixo com título e menu de navegação -->
+  <header>
+    <h1>ONG Raízes do Amanhã</h1>
+
+    <!-- Botão do menu hambúrguer para dispositivos móveis -->
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+    <!-- Menu de navegação SPA com links que ativam templates via JavaScript -->
+    <nav class="menu">
+      <ul>
+        <li><a href="#" onclick="navigateTo('home')">Início</a></li>
+        <li><a href="#" onclick="navigateTo('projetos')">Projetos</a></li>
+        <li><a href="#" onclick="navigateTo('cadastro')">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Área principal onde os templates são carregados dinamicamente -->
+  <main id="app"></main>
+
+  <!-- Rodapé fixo com informações institucionais e de contato -->
+  <footer>
+    <p>&copy; 2025 ONG Raízes do Amanhã | contato@raizesdoamanha.org</p>
+  </footer>
+
+  <!-- Scripts que controlam a lógica da SPA -->
+  <script src="js/templates.js"></script>       <!-- Contém os templates HTML de cada aba -->
+  <script src="js/router.js"></script>          <!-- Controla a navegação entre abas -->
+  <script src="js/formValidator.js"></script>   <!-- Valida o formulário de cadastro -->
+  <script src="js/app.js"></script>             <!-- Inicializa a aplicação e ativa interações -->
+</body>
+</html>
+<!-- Alteração feita para liberar Pull Request -->
+<!-- Comentário para liberar PR -->
