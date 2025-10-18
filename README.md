@@ -16,7 +16,7 @@ Acesse aqui:
 - Layout responsivo
 - Navegação SPA com JavaScript
 - Validação de formulário
-- Estrutura final em `/dist` com arquivos minificados
+- Estrutura final com arquivos minificados
 
 ## 👨‍💻 Tecnologias
 
